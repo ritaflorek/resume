@@ -1,0 +1,86 @@
+section
+	.left
+
+		//- Personal Statement
+		.square
+		h4 Personal Statement
+		hr
+		p {{ site.data.settings.personal_statement }}
+
+		
+
+		//- Education
+		.square
+		h4 Education
+		hr
+
+		ul
+			| {% for item in site.data.settings.education %}
+			li
+				h5 {{ item.name }}, {{item.city}}, {{item.country}}
+				p.info
+					strong {{item.date}} <br>
+					strong {{item.degree}}
+				p 
+					em Principal subjects include:
+					|  {{item.subjects}}
+			| {% endfor %}
+
+		
+
+		//- Languages
+		.square
+		h4 Languages
+		hr
+
+		.lang-unit
+			| {% for item in site.data.settings.languages %}
+			.lang 
+				p {{item.language}} <br> 
+					em {{item.level}}
+			| {% endfor %}
+
+
+
+	.right
+		//- Work Experience
+		.square
+		h4 Work Experience
+		hr
+
+		ul
+			| {% for job in site.data.settings.experience %}
+			li 
+				h5 {{job.company}}, {{job.city}}, {{job.country}}
+				p.info
+					strong {{job.date}}
+					strong  {{job.position}} 
+
+				p Member of the {{job.team}} team. 
+					em Main responsibilities include: 
+					|  {{job.responsibilities}}
+			| {% endfor %}	
+		
+		
+		
+		//- Icons
+		.square
+		h4 My Specialities
+		hr
+
+		.skills-wrap
+	
+			| {% for item in site.data.settings.specialities %}
+			.icon
+				| {% include icons/{{item.name}}.html %}
+			| {% endfor %}
+
+		.line-wrap
+			| {% for item in site.data.settings.specialities %}
+			.line
+				h6 {{item.tag}}
+				.dot
+			| {% endfor %}
+
+
+		

@@ -1,0 +1,18 @@
+section
+	.header
+		h2 {{ site.data.settings.title }}
+		
+		.contact
+			.label Address:
+			ul
+				li {{ site.data.settings.street }} 
+				li {{ site.data.settings.city }}
+				li {{ site.data.settings.state }}
+
+			.label Contact:
+			ul
+				li: a(href="mailto:{{ site.data.settings.email }}") {{ site.data.settings.email }}
+				li {{ site.data.settings.phone }}
+				li {{ site.data.settings.skype }}
+	
+	.picture

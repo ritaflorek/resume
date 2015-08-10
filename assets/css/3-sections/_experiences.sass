@@ -1,0 +1,315 @@
+.left
+	+span(6 of 12)
+
+	p
+		padding-right: 30px
+
+
+	hr
+		margin-right: 30px
+
+	ul
+		list-style-type: circle
+	
+	h5
+		padding-right: 30px
+
+
+.right
+	+span(6 at 7 of 12)
+
+	ul
+		list-style-type: circle
+
+
+
+.square
+	+size(17px)
+	// margin-right: 5px
+	margin: 0 5px -1px 0
+	background-color: black
+	display: inline-block
+
+h4
+	display: inline-block
+	text-transform: uppercase
+	font-weight: 400
+	margin-bottom: 0
+
+p 
+	text-align: justify
+
+	strong
+		color: #999
+		
+		&:last-child
+			color: #000
+
+.info
+	margin: -15px 0 5px
+
+h5
+	text-transform: uppercase
+
+	
+
+
+.date
+	font-weight: 700
+
+
+// Languages
+
+.lang-unit
+	+display(flex)
+	+justify-content(space-between)
+	padding-right: 30px
+	
+
+	.lang
+		border: 3px solid black
+		font-size: 12px
+		margin-right: 6px
+		+display(flex)
+		+align-items(center)
+		+justify-content(center)
+		+span(4/12)
+		+size(77px)
+
+
+		&:last-child
+			margin: 0
+
+		p
+			margin: 0
+			padding: 0
+
+
+
+
+// Skills
+
+.skills-wrap
+	display: flex
+	justify-content: space-around
+
+
+	.icon
+		background: transparent
+		border-radius: 50%
+		border: 2px solid black
+		padding: 30px
+		margin-left: -60px
+		+size(45px)
+
+		&:first-child
+			margin: 0
+		
+		svg
+			+size(45px)
+
+.line-wrap
+	display: flex
+	justify-content: space-around
+	margin-top: -17px	
+
+
+	.line
+		+size(1px 105px)
+		border-left: 1px solid black
+		margin-left: -60px
+		position: relative
+
+
+		&:nth-child(1)
+			margin: 0
+			height: 60px
+
+			h6
+				position: absolute
+				text-align: center
+				font-weight: normal
+				top: 40px
+				left: -75px
+				width: 150px
+
+				
+		&:nth-child(2)
+			h6
+				position: absolute
+				text-align: center
+				font-weight: normal
+				top: 85px
+				left: -75px
+				width: 150px
+
+
+
+		&:nth-child(3)
+			height: 75px
+
+			h6
+				position: absolute
+				text-align: center
+				font-weight: normal
+				top: 55px
+				left: -75px
+				width: 150px
+
+		&:nth-child(4)
+			height: 40px
+
+			h6
+				position: absolute
+				text-align: center
+				font-weight: normal
+				top: 20px
+				left: -75px
+				width: 150px
+
+
+
+.dot
+	+size(5px)
+	background-color: black
+	border-radius: 50%
+	position: absolute
+	top: 0
+	left: -3px
+	
+
+
+@media (max-width: 880px)
+	.left
+		float: none
+		width: 100%
+
+
+	.right
+		float: none
+		width: 100%
+		// margin-top: 14px
+
+
+
+
+// Phone
+@media (max-width: 420px)
+	section
+		padding-top: 20px
+
+		h4
+			font-size: 18px
+
+
+	.left
+		hr
+			margin-right: 0
+		p
+			padding: 0
+		ul
+			padding-left: 20px
+
+	.square
+		// display: none
+
+	.lang-unit
+		display: block
+		+container(82%)
+		padding: 0
+		margin: 0 auto
+
+
+		.lang
+			+size(91px)
+
+			&:nth-child(1)
+				margin: 0 auto 15px 0
+			&:nth-child(2)
+				margin: 0 0 15px 15px
+			&:nth-child(3)
+				margin: 0 15px 0 0
+
+	.right ul
+		padding-left: 20px
+
+
+	.skills-wrap
+		display: block
+		+span(6 of 12)
+
+		.icon
+			padding: 25px
+			margin: 0 10px -13px 0
+
+			&:first-child
+				margin: 0 10px -13px 0
+
+	.line-wrap
+		+span(6 of 12)
+		display: block
+		margin: 0
+
+		.line
+			+size(0px 0px)
+			border-left: 0px solid black
+			margin: 0
+			position: relative
+			width: 100%
+
+			h6
+				text-align: center
+				margin-bottom: 57px
+
+
+			&:nth-child(1)
+				margin: auto
+				height: auto
+
+				h6
+					position: relative
+					text-align: center
+					font-weight: normal
+					top: auto
+					left: auto
+					width: auto
+
+					
+			&:nth-child(2)
+				height: auto
+				h6
+					position: relative
+					text-align: center
+					font-weight: normal
+					top: auto
+					left: auto
+					width: auto
+
+
+
+			&:nth-child(3)
+				height: auto
+
+				h6
+					position: relative
+					text-align: center
+					font-weight: normal
+					top: auto
+					left: auto
+					width: auto
+
+			&:nth-child(4)
+				height: auto
+
+				h6
+					position: relative
+					text-align: center
+					font-weight: normal
+					top: auto
+					left: auto
+					width: auto
+
+	.dot
+		display: none
+
+

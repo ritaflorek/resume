@@ -1,0 +1,15 @@
+# Layout settings
+
+
+# Images
+
+hero: "face1.jpg"
+
+# Colors
+
+accent: "#666"
+
+textColor: "#000"
+headlineColor: "#000"
+# bgcolor: "#e5eaee"
+documentBackgroundColor: "#fff"

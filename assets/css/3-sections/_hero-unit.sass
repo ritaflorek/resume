@@ -1,0 +1,133 @@
+section
+	+container(100%)
+	padding-top: 60px
+
+.header
+	+span(8.5 of 12)
+	
+	h2
+		+span(12 of 12)
+		display: block
+		text-transform: uppercase
+		font-weight: 400
+	
+	.contact
+		+span(100%)
+
+		.label
+			+span(2 of 12)
+			margin: 0
+			font-style: italic
+
+		ul
+			+span(4 of 12)
+			margin: 0
+			padding: 0
+			font-style: italic
+
+
+.picture
+	+span(3.5 of 12)
+	+size(200px)
+	background:
+		size: cover
+		position: center
+		image: url(../img/#{$hero-path})
+	border-radius: 50%
+	margin: 0 auto
+	box-shadow: 0px 0px 0px 2px black, 0px 0px 0px 4px white inset, 0px 1px 2px 3px rgba(0,0,0,0.2)
+
+
+
+
+@media (max-width: 1310px)
+	.header
+
+		h2
+
+		.contact
+
+			.label
+				+span(1.4 of 12)
+
+	.picture
+		+size(180px)
+		margin-top: 17.43px
+
+
+
+
+@media (max-width: 1110px)
+	.contact
+		font-size: 13px
+
+
+
+
+@media (max-width: 1050px)
+	.header h2
+		font-size: 38px
+
+		.contact
+			font-size: 12px
+
+	.picture
+		+size(150px)
+		// margin-top: 34.86px
+
+
+
+@media (max-width: 880px)
+
+	section
+		&:nth-child(2)
+			padding-top: 30px
+
+		.header
+			margin: 0
+
+			.contact
+				margin: 0
+	
+	.header
+		width: 100%
+
+		h2
+			text-align: center
+
+
+	.picture
+		display: none
+
+
+
+@media (max-width: 420px)
+	body
+		+container(80%)
+
+
+	.header
+		h2
+			font-size: 28px
+
+		.contact 
+
+			.label
+				width: 100%
+				margin: 0
+				+span(3 of 12)
+
+				&:nth-child(3)
+					margin-top: 10px
+
+
+
+			ul
+				width: 100%
+				+span(8 of 12)
+
+				&:nth-child(4)
+					margin-top: 10px
+
+
+			

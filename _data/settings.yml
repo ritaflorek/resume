@@ -1,0 +1,130 @@
+
+# General Site Settings
+
+title: Anton Kostiuchkov
+email: antonkostiuchkov@gmail.com
+
+# Address
+
+street: Rua Estácio Coimbra 84
+city: Rio de Janeiro 22260-010
+state: Brazil
+
+phone: +48 510 72 77 02
+skype: skype@antonkostiuchkov
+
+
+# NOTE: The Logo and Background image are defined in the all.sass document.
+# NOTE: The avatar is defined in the all.sass document.
+
+#-------------------------------
+# Personal statement
+personal_statement: 
+  I’m a generalist and technological do-it-your-self’er, who is passionate about web development, data computation, visuals and programming. My formal education was at the Kiev National Economic University, where I graduated in 2010.
+
+  <br><br>
+
+  My interests outside of web development have taken me far afield, including years-long dalliances into film making and data analysis, both of which continue to inform my work in front-end, data management and overall professional life.
+
+  <br><br>
+
+  During my free time, I like to drink caffeine and get back to work.
+
+
+#-------------------------------
+# Education
+education:
+- {
+  name: Lazarski University,
+  city: 'Warsaw',
+  country: 'Poland',
+  date: '10/2010 - present',
+  degree: 'Master of Arts in International Relations',
+  subjects: 'National & International Security; International Political Economy; Human Rights & Environmental Protection; Globalization & Regionalization;'
+}
+- {
+  name: Kyiv National Economic University,
+  city: 'Kiev',
+  country: 'Ukraine',
+  date: '09/2007-06/2010',
+  degree: 'Bachelor of Arts in Business Economy',
+  subjects: 'Economics and Organization of Innovations; Operations Management; Project Analysis; Econometrics; Statistics; Economic Research and Forecasting;'
+}
+
+
+#-------------------------------
+# Languages
+languages:
+- {language: 'Russian /<br> Ukrainian', level: 'Native'}
+- {language: 'English', level: 'Fluent'}
+- {language: 'Polish', level: 'Fluent'}
+- {language: 'Portuguese', level: 'Basic'}
+
+
+#-------------------------------
+# Work Experience
+experience:
+- {
+  company: 'Thomson Reuters',
+  city: 'Gdynia',
+  country: 'Poland',
+  date: '01/2013 - 01/2015',
+  position: 'Data Analyst',
+  team: 'Estimates',
+  responsibilities: 'Providing clients with financial data update on a regular basis; - Researching and collecting relevant data; - Using language skills to understand source and confirm relevant financial information; - Ensuring the data is provided in a timely and accurate manner; - Building up knowledge on Private Companies; - Monitoring the markets;<br><p class="info"><strong>11/2012 - 12/2012</strong> <strong>Intern in Corporate Actions and Deals team</strong></p>'}
+- {
+  company: 'Polish-Kazakhstani Chamber of Commerce and Industry',
+  city: 'Warsaw',
+  country: 'Poland',
+  date: '11/2011 - 02/2012',
+  position: 'Intern',
+  team: '',
+  responsibilities: '- Market analysis, analytical materials and reports search; - Correspondence and negotiations with Polish and Kazakh businesses;'}
+- {
+  company: 'Sayama Travel',
+  city: 'Pattaya',
+  country: 'Thailand',
+  date: '07/2011-09/2011',
+  position: 'Project manager assistant',
+  team: 'Design',
+  responsibilities: '- Ensured contact and cooperation with business partners; - Supported project manager and graphic design team in developing tourist brochure; - Performed information collection, correspondence, document editing;'}
+
+
+
+#-------------------------------
+# My Specialities
+# name - is the name of a file in icons folder. E.g. "name".html
+
+specialities:
+- {name: 'self-education', tag: 'Self Education'}
+- {name: 'digital', tag: 'Crafting <br> Digital Interfaces'}
+- {name: 'coach', tag: 'Trainer and Coach'}
+- {name: 'language', tag: 'Foreign Languages'}
+
+
+
+
+
+
+
+
+
+#-------------------------------
+# SEO Section
+
+# NOTE: Providing SEO information will make this website more searchable on the internet.
+
+# seo:
+#   description: 'Provide a description for your website to make it visible to search engines.'
+#   rel-author: 'https://plus.google.com/u/0/+DevTipsForDesigners/'
+#   rel-publisher: 'https://plus.google.com/u/0/+DevTipsForDesigners/'
+
+#-------------------------------
+# Google Analytics Section
+
+# Analytics helps you understand who visits your website.
+# Learn more at: http://support.google.com/analytics/answer/1008065
+
+# NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
+
+#google-analytics-ua: UA-XXXXXX-X
